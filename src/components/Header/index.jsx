@@ -1,7 +1,9 @@
+import { Socials } from "../Socials"
+
 export const Header = () => {
     return (
       <header>
-        aaaaaaaaaaa
+        <Socials />
       </header>
     )
   }

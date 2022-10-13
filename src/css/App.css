@@ -2,46 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-    max-width: 1024px;
-    margin: auto;
+/* START Header */
+header {
+  background-color: #064075;
+  padding: 40px 80px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.post{
-    max-width: 600px;
+header .header-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.post img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+header .header-socials img{
+  width: 35px;
 }
 
-.post .post-content{
-    background-color: #c2c2c2;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 15px;
-    line-height: 1.2;
-    width: 100%;
+/* END Header */
+
+/* START Posts container */
+.container {
+  max-width: 1024px;
+  margin: auto;
 }
 
-.post .post-content h1{
-    font-size: 25px;
-    font-weight: 500;
-    text-transform: uppercase;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
-           line-clamp: 1; 
-    -webkit-box-orient: vertical;
+.post {
+  max-width: 600px;
 }
 
-.post .post-content p{
-    overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
-           line-clamp: 4; 
-   -webkit-box-orient: vertical;
+.post img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
+.post .post-content {
+  background-color: #c2c2c2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.post .post-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.post .post-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* END Posts container */
