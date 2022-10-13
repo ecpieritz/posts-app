@@ -1,6 +1,7 @@
 import './css/style.css';
 import { Component } from 'react';
 import { PostCard } from './components/PostCard';
+import { Header } from './components/Header';
 
 
 class App extends Component {
@@ -32,19 +33,20 @@ class App extends Component {
     const { posts } = this.state;
 
     return <div className='App'>
+      <Header />
       <section className="container p-4">
-      <div className='grid grid-cols-3 gap-8'>
-        {posts.map((post) => (
-          <PostCard
-            key={post.id}
-            title={post.title}
-            body={post.body}
-            id={post.id}
-            cover={post.cover}
-          />
-        ))}
-      </div>
-    </section>
+        <div className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-8'>
+          {posts.map((post) => (
+            <PostCard
+              key={post.id}
+              title={post.title}
+              body={post.body}
+              id={post.id}
+              cover={post.cover}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   }
 }
